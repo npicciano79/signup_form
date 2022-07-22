@@ -1,0 +1,118 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html,body{
+    
+}
+.main_container{
+    display:grid;    
+}
+
+
+.left{
+    width: 30%;
+    min-height:100vh;
+    border: solid 1px black;
+    background-image:url("/odin/signup_form/images/mainimage_left2.jpg");
+    background-size:100% 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+.container_left_banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(204,204,204,0.5);
+    height:15%;
+    margin-top: 30%;
+}
+h1,h2{
+    color:white;
+    text-transform: uppercase;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: right;
+    width:100%;
+
+}
+.main_logo{
+    display: flex;
+    justify-content: center;
+       
+    
+}
+img{
+    max-width: 60%;  
+
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:90%;
+    margin-bottom:3%;
+    margin-top:3%;
+}
+.username_password{
+    max-height: 90%;
+    margin-bottom:3%;
+    
+}
+.username,.password,.submit_button{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+     
+}
+#member_username_Label,#member_password_Label,#member_submit{
+    text-transform: uppercase;
+    font-size: 120%;
+    font-weight: bold; 
+     
+}
+#member_password,#member_username{
+    border-radius: 10px;
+    width:200%;
+    font-size:x-large;
+    margin-bottom:10%;
+    
+    
+}
+#member_submit{
+    border-radius: 10px;
+    width:100%;
+    height:120%;
+    cursor: pointer;
+    transition:.4s;
+    
+}
+#member_submit:hover{
+    background-color:cadetblue;
+    transform: scale(1.05);
+}
+
+.new_member_registration{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width:100%;
+
+}
+a{
+    margin-left:5%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:blue;
+    transition:.4s;
+}
+a:hover{
+    opacity: .6;
+}
