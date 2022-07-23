@@ -7,12 +7,18 @@ html,body{
     
 }
 .main_container{
-    display:grid;    
+    display:grid;  
+    grid-template-areas:
+    "sidebar header header"
+    "sidebar content content"; 
+    grid-template-columns: .6fr 1fr 1fr; 
+    grid-template-rows: 1.5fr 2.5fr;
 }
 
 
 .left{
-    width: 30%;
+    grid-area:sidebar;
+    
     min-height:100vh;
     border: solid 1px black;
     background-image:url("/odin/signup_form/images/mainimage_left2.jpg");
@@ -35,14 +41,16 @@ h1,h2{
 }
 
 .right{
+    grid-area: content;
     display: flex;
     flex-direction: column;
     align-items: center;
-    float: right;
-    width:100%;
+    margin-top: 7%;
+    
 
 }
 .main_logo{
+    grid-area:header;
     display: flex;
     justify-content: center;
        
@@ -52,15 +60,7 @@ img{
     max-width: 60%;  
 
 }
-.login{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width:90%;
-    margin-bottom:3%;
-    margin-top:3%;
-}
+
 .username_password{
     max-height: 90%;
     margin-bottom:3%;
@@ -82,9 +82,7 @@ img{
     border-radius: 10px;
     width:200%;
     font-size:x-large;
-    margin-bottom:10%;
-    
-    
+    margin-bottom:10%;   
 }
 #member_submit{
     border-radius: 10px;
@@ -92,6 +90,8 @@ img{
     height:120%;
     cursor: pointer;
     transition:.4s;
+    border: none;
+    background-color: lightgray;
     
 }
 #member_submit:hover{
@@ -102,12 +102,11 @@ img{
 .new_member_registration{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    width:100%;
+    align-items: center;
 
 }
 a{
-    margin-left:5%;
+    margin-left:10%;
     text-decoration: none;
     text-transform: uppercase;
     color:blue;
